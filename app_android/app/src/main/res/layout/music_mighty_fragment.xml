@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_plane">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mighty_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/scroll_linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:smoothScrollbar="true"/>
+
+        <LinearLayout
+            android:id="@+id/empty_layoutt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/before_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_before_connected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="You'll need to go to the \n 'CONNECTIONS' tab and connect to \n a Mighty before you can view your \n synced playlists."/>
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/line_icon"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_after_connected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="\nThere are no playlists on your \n\tMighty.\n\n1. Tap the Your Music tab above to \n\tfind some playlists.\n\n\t2. Then tap SYNC to add them to \n\tyour Mighty.\n\n \tPsssst! Once you've synced playlists to\n\tMighty, tap 'Stay Fresh!' to pull in any\n\t changes you've made to those playlists."
+                android:gravity="center_vertical|center"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

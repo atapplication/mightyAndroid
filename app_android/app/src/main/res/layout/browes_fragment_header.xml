@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/whole_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <ViewFlipper
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/viewFlipper">
+            <FrameLayout
+                android:id="@+id/flip_side1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/flip_background">
+
+                <mightyaudio.core.PinkCircle
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:id="@+id/pink_storage"
+                    custom:finishedColor="#FF369B"
+                    android:layout_gravity="center"
+                    custom:strokewidth="20"/>
+
+                <mightyaudio.core.CircleView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:id="@+id/blue_storage"
+                    custom:finishedColor="#1E90FF"
+                    android:layout_gravity="center"
+                    custom:strokewidth="8"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_storage_diplay"
+                    android:layout_gravity="left"
+                    android:src="@drawable/measure"/>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:indeterminateDrawable="@drawable/custom_progressbar"
+                    android:visibility="invisible"
+                    android:id="@+id/progress_wait" />
+
+                <ProgressBar
+                    android:id="@+id/download_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/circular_progress_bar"/>
+
+                <TextView
+                    android:id="@+id/text_download_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:text="0"
+                    android:visibility="invisible"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/flip_side2"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/flip_background">
+
+                <mightyaudio.core.RectangleProgress
+                    android:id="@+id/rect_prog"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    custom:fillColor="#66CD00"
+                    custom:strokeColor="#66CD00"
+                    custom:strokeWidth="20"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_battery_display"
+                    android:layout_gravity="left"
+                    android:src="@drawable/batteryholo"/>
+                <ImageView
+                    android:id="@+id/image_battery_display_charging"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center|center_vertical|center_horizontal"
+                    android:src="@drawable/battery_charge"/>
+            </FrameLayout>
+
+        </ViewFlipper>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Storage"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/storage_capacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:text="0% full"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_battery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Battery"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/playback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:text="0%"
+                        android:textSize="@dimen/_12sdp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_sync"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:background="#00C2F3"
+                android:text="Sync"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#666666"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            app:srcCompat="@drawable/music_spotify"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tab_gray_color"/>
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:background="@drawable/list_item_bg_spotify_your">
+
+        <FrameLayout
+            android:id="@+id/search_bar_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/serchbar_btn"
+                android:layout_width="match_parent"
+                android:background="@drawable/searchbar_shape"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/search_icon"/>
+                <TextView
+                    android:id="@+id/text_search"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/search_playlist"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_gravity="center_horizontal|center_vertical"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/searchbar_focus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"
+                android:background="@drawable/searchbar_shape"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal">
+                <FrameLayout
+                    android:id="@+id/image_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back_btn"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/back_icon"/>
+                </FrameLayout>
+
+
+                <EditText
+                    android:id="@+id/inputSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:background="@drawable/searchbar_focus_shape"
+                    android:singleLine="true"
+                    android:layout_margin="1dp"
+                    />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

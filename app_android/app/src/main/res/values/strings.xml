@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">Mighty</string>
+    <string name="login_button">Login to Spotify</string>
+    <string name="search">Search</string>
+    <string name="cover_art_description">Cover art</string>
+    <string name="search_hint">Search tracks</string>
+    <string name="setup">Setup</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_set_up">SetUpActivity</string>
+
+    <declare-styleable name="customfont">
+        <attr name="android:fontFamily" />
+        <attr name="android:textStyle" />
+    </declare-styleable>
+
+    <!--    BLE  START-->
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">Bluetooth Devices</string>
+    <string name="title_devices_control">Wireless Network</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Update</string>
+    <string name="menu_stop">Stop</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Setup Flow -->
+    <string name="no_thanks">No Thanks</string>
+    <string name="text_head_need_mighty">You need a \nMighty</string>
+
+    <!--SIGN UP-->
+
+    <string name="cancel_cap">CANCEL</string>
+    <string name="create_ac_head">Create Account</string>
+    <string name="save">SAVE</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="re_enter_password">Re-enter password</string>
+    <string name="email">Email address</string>
+    <string name="age">Age</string>
+    <string name="field_required">Field is required</string>
+    <string name="email_incorrect">Incorrect Email</string>
+    <string name="facebook_app_id">1471373249540897</string>
+    <string name="your_password_eight_charaters">Your password must be at least six characters</string>
+    <string name="your_username_eight_charaters">Your username must be at least six characters</string>
+
+    <!--user setting Activity-->
+    <string name="login">Login</string>
+    <string name="Logout">Logout</string>
+    <string name="Log_in">Log in</string>
+    <string name="username_password_header">Username &amp; Password</string>
+    <string name="privacy_terms" formatted="false">Privacy &amp; Terms</string>
+    <string name="issue_report">Send Report</string>
+    <string name="mighty_about">About</string>
+    <string name="mighty_app_version">Mobile App Version</string>
+    <string name="mighty_version">Mighty Version</string>
+    <string name="your_mighty">Your Mighty</string>
+    <string name="your_account">Your Account</string>
+
+    <string name="login_with_different_mighty_account_erase_playlist">Login in with a different Mighty account will be erase all playlist currently store on your Mighty</string>
+
+    <!--Music Activity-->
+    <string name="please_select_playlist">Please select playlist</string>
+    <string name="playlist_downloaded">Playlist is already downloaded</string>
+    <string name="playlist_sync_logout">Please wait for the sync in progress to complete or disconnect your Mighty from Mobile app and try again</string>
+    <string name="playlist_sync_logout_tittle">You must be logged into your Mighty account to sync</string>
+    <string name="playlist_sync_message_spotifylogout">Please wait for the sync in progress to complete before logging out of Spotify</string>
+    <string name="playlist_selectwhile_sync_meaage">Please wait for the sync in progress to complete and try again</string>
+    <string name="playlist_selectwhile_sync_tittle"></string>
+    <string name="mighty_not_connected_title">Mighty not connected</string>
+    <string name="download_quality_msg">Please connect your Mighty before changing Download Quality.</string>
+    <string name="playlist_sync_tittle">New playlists cannot be selected during sync</string>
+    <string name="pullto_reresh_doring_sync">Pull to refresh cannot be used during sync</string>
+
+    <string name="not_enough_memory_tittle">Are you sure?</string>
+    <string name="not_enough_memory_message">There may not be enough space on your Mighty to sync the selected playlists. Mighty will sync as many as possible.</string>
+    <string name="syncing_spotify_logout">You must be logged into your Spotify account to sync</string>
+    <string name="download_bitrate_change_syncing_tittle">Download Quality cannot be changed during sync</string>
+    <string name="playlist_have_no_track">You have selected a playlist with 0 songs and cannot be synced</string>
+
+    <string name="auto_fill_sync_tittle">Autofill cannot be selected during sync</string>
+
+    <string name="title_activity_download_quality">DownloadQualityActivity</string>
+    <string name="fillerup">Fill-er-up!</string>
+    <string name="auto_fill_subheading">Fill your Mighty with randomly selected playlists</string>
+    <string name="action_settings">User</string>
+    <string name="search_playlist">Search playlists</string>
+    <string name="stay_fresh">Stay Fresh!</string>
+    <string name="refresh_play_list">Refresh the playlists on your Mighty</string>
+    <string name="stay_fresh_not_possible_tittle">Stay Fresh not possible</string>
+    <string name="download_failed_header">Spotify connection error</string>
+    <string name="download_failed_body">Please logout and login back into your Spotify account and try again. \n (Error 4)</string>
+    <string name="storage_error_header">Your Mighty\'s storage is full</string>
+    <string name="storage_error_message">We\'ve synced as many songs as possible, but some may not have made it. Click on the Mighty logo to see the number of songs that were successfully synced to each playlist.
+ (Error 10)</string>
+    <string name="spotify_error_header">We\'re having trouble connecting with the Spotify server</string>
+    <string name="spotify_error_message">This may be because of poor internet connectivity, please wait for few minutes and try again. If the problem continues go to the Connections tab and logout and login back to your Spotify account, then try again.
+ (Error 9)</string>
+    <string name="poor_network_head">Poor network connectivity</string>
+    <string name="some_playlist_not_synced">Some of your playlists were not synced. Please try again later.\n (Error 8)</string>
+
+    <!--Login Activity-->
+    <string name="forgot_password">Forgot password</string>
+    <string name="create_account">Create an account</string>
+    <string name="mighty_login">Mighty Login</string>
+    <string name="login_message">Login successful</string>
+    <string name="check_internet">Please check your internet connection</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Login with Facebook</string>
+    <string name="pass_not_match">Passwords do not match</string>
+    <string name="pass_changed">Password changed successfully</string>
+    <string name="authontication_facebook">Authenticating...</string>
+
+
+    <!--Spotify Login-->
+    <string name="mighty_premium_tittle">Mighty requires a premium account</string>
+    <string name="mighty_premium_message">Please upgrade your account</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="continue__button">Continue</string>
+    <string name="yes">Yes</string>
+    <string name="ok">Okay</string>
+    <string name="no">No</string>
+    <string name="title_activity_spotify">SpotifyActivity</string>
+    <string name="need_one">Need One</string>
+    <string name="got_one">Got One</string>
+    <string name="please_login_to_spotify">Please login to Spotify</string>
+    <string name="learn_more_spotify">Learn more about Spotify Premium</string>
+    <string name="mighty_setup">Mighty Setup</string>
+    <string name="connect_mighty">Please connect your Mighty</string>
+
+    <!--Forgot password-->
+    <string name="reset_password_message">Please check your email in a few minutes</string>
+    <string name="email_not_regoster">Your email address is not registered</string>
+
+    <!--Auto Connted dailog-->
+    <string name="hide">Hide</string>
+    <string name="title_activity_mighty_about">MightyAboutActivity</string>
+
+    <!--MightySoftwareUpdateActivity-->
+    <string name="ok_plugged">OK, I’m plugged in</string>
+    <string name="it_wiil_take_minutes">It will take a few minutes to \n download the update for your \n Mighty.</string>
+    <string name="please_connect_your_mighty">Please connect your Mighty to a charger</string>
+    <string name="or">Or</string>
+    <string name="your_battery_low_message">Your battery is too low, please charge your Mighty for at least 30 min, then retry</string>
+    <string name="you_must_update_mighty_header">Are you sure?</string>
+    <string name="you_must_update_mighty">An update is available for your Mighty. If you proceed you can update it later by clicking on Software Update button in User Tab</string>
+    <string name="you_must_update_mighty_lower">You must update your Mighty in order to use with your App. If you proceed your Mighty will be disconnected. Please reconnect your Mighty when you are ready to update.</string>
+    <string name="hardeware_compality">Mobile app is not compatible with the Mighty software version. And also no Internet connection detected for OTA. Please connect to a WiFi or cellular network and try again.</string>
+    <string name="please_update_your_mighty">Please update your Mighty in order to access this tab</string>
+    <string name="software_update_fail">Software update failed</string>
+    <string name="connect_mighty_to_mobile">Please connect your Mighty to the mobile app and a WiFi network and try again</string>
+    <string name="click_okay_below_to_reconnect">Click okay below to reconnect</string>
+    <string name="mighty_not_connected_wifi">Your Mighty isn’t connected to the wifi</string>
+    <string name="mighty_not_connected_app">Your Mighty isn’t connected to the app</string>
+
+    <!-- Connect Activity-->
+    <string name="wifi_is_required_syncing">WiFi is required for syncing</string>
+    <string name="title_activity_debug">DebugActivity</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RectangleProgress">
+        <attr name="fillColor" format="color" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="float" />
+        <attr name="value" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleProgress">
+        <attr name="finishedColor" format="color" />
+        <attr name="strokewidth" format="float" />
+        <attr name="finishedPinkColor" format="color"/>
+    </declare-styleable>
+
+</resources>

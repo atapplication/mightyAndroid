@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mightyaudio.activity.UserActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/header_bg"
+            android:minHeight="?attr/actionBarSize">
+            <TextView
+                android:id="@+id/txtprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_19sdp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/action_settings">
+            </TextView>
+
+        </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:text="Software Version"
+        android:visibility="gone"
+        android:fontFamily="serenity-light.ttf"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_plane"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_user_settings_scrolling"></include>
+
+    </LinearLayout>
+
+
+</LinearLayout>

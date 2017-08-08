@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_spotify_your"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+            <LinearLayout android:id="@+id/thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/music_image"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/empty_playlist_image"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingRight="10dp"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/entity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="jkigidf"
+        android:layout_marginStart="3dp"
+        android:layout_gravity="center_vertical|center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/text_track_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|center"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="jkigidf"
+        android:textSize="@dimen/_12sdp" />
+</LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="10dp">
+                <FrameLayout
+                    android:id="@+id/img_btn_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:src="@drawable/list_item_plus"/>
+                    </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/img_blue_tick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/list_item_tick_blue" /> />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

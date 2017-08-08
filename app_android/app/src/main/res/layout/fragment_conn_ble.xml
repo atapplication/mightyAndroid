@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_plane">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/grey_header_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bluetooth_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Bluetooth"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/mighty_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Mightys"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#b2b2b2"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:visibility="visible"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:layout_marginTop="60dp"
+        >
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_marginTop="117dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/Bt_Accessories"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:background="@drawable/grey_header_background"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Bluetooth Accessories"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="serenity-bold.ttf"
+            android:textColor="#b2b2b2"/>
+
+        <ListView
+            android:id="@+id/Frame_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:smoothScrollbar="true"
+            android:visibility="invisible">
+        </ListView>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ble_not_enabled"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ble_icon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ble_icon"/>
+
+        <TextView
+            android:id="@+id/ble_not_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Bluetooth is \nnot enabled "
+            android:textSize="@dimen/_27sdp"/>
+
+        <TextView
+            android:id="@+id/ble_not_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Go to your phone’s settings and turn on Bluetooth so you can control your Mighty with this app."
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ble_discoverable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <ProgressBar
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/progressBar_footer"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminateDrawable="@drawable/custom_progressbar"/>
+
+        <ImageView
+            android:id="@+id/ble_icon_discoverable"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ble_icon"/>
+
+        <TextView
+            android:id="@+id/ble_discover_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="There are no \n discoverable Mightys"
+            android:textSize="@dimen/_27sdp" />
+
+        <TextView
+            android:id="@+id/ble_discover_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Make sure your Mighty \n is charged up and powered on."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/bt_plus_tap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Swipe down to search for Bluetooth accessories, then tap the “+” to pair."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            />
+
+    </FrameLayout>
+</RelativeLayout>  </android.support.v4.widget.SwipeRefreshLayout></ScrollView>

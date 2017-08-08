@@ -1,0 +1,100 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--android:layout_marginBottom="50dp"--> // Aboube one give margin but after change pointer botton showing 50 dp margine
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/header_bg"
+                android:clickable="false"
+                android:fillViewport="false"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#00FFFFFF"
+                app:tabMode="fixed" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/layout_mighty"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/mighty_image"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/ic_txt_mighty_blue"/>
+                        <ImageView
+                            android:id="@+id/tab_indicator1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:src="@drawable/arrow" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_your_music"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/txtbrowse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Music"
+                        android:textColor="#b0aeae"
+                        android:textSize="@dimen/_19sdp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/tab_indicator2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:src="@drawable/arrow" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <mightyaudio.core.NonSwipeableViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

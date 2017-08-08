@@ -1,0 +1,485 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="mightyaudio.activity.MightyCreateAccountActivity">
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_header_background"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/user_account"/>
+            <TextView
+                android:id="@+id/text_account"
+                android:layout_width="wrap_content"
+                android:text="@string/your_account"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_bg_spotify">
+            <TextView
+                android:id="@+id/text_logged_as"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/text_pading"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="13dp"
+                android:paddingRight="5dp"
+                android:paddingTop="13dp"
+                android:text="Logged in as :"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/text_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="5dp"
+                android:layout_alignRight="@+id/text_logged_as"
+                android:text="Anupam"
+                android:textColor="@color/btn_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical|left"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_item_bg_spotify">
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/text_pading"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="Logout"
+        android:fontFamily="serenity-light.ttf"
+        android:background="?android:attr/selectableItemBackground"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:padding="13dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@+id/text_log_out"
+        android:textSize="@dimen/_25sdp"
+        android:text=">"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center_vertical"
+        android:background="@drawable/list_item_bg_spotify">
+        <TextView
+            android:id="@+id/text_change_password"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/text_pading"
+            android:gravity="left|center_vertical"
+            android:text="Change Password"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="serenity-light.ttf"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@+id/text_log_out"
+            android:textSize="@dimen/_25sdp"
+            android:text=">"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/forgot_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center_vertical"
+        android:background="@drawable/list_item_bg_spotify_your">
+
+        <TextView
+            android:id="@+id/text_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:fontFamily="serenity-light.ttf"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/text_pading"
+            android:text="Forgot Password"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@+id/text_log_out"
+            android:textSize="@dimen/_25sdp"
+            android:text=">"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_header_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/mighty_profile"/>
+        <TextView
+            android:id="@+id/text_header_mighty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serenity-bold.ttf"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/your_mighty"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center_vertical"
+        android:background="@drawable/list_item_bg_spotify">
+
+        <TextView
+            android:id="@+id/text_mighty_help"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:fontFamily="serenity-light.ttf"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/text_pading"
+            android:text="Mighty Help"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/arrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@+id/text_log_out"
+            android:textSize="@dimen/_25sdp"
+            android:text=">"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_bg_spotify">
+
+            <TextView
+                android:id="@+id/text_mighty_led"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:fontFamily="serenity-light.ttf"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/text_pading"
+                android:text="Mighty LED"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/arrow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:padding="13dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignRight="@+id/text_log_out"
+                android:textSize="@dimen/_25sdp"
+                android:text=">"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center_vertical"
+        android:background="@drawable/list_item_bg_spotify">
+
+        <TextView
+            android:id="@+id/text_mighty_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="serenity-light.ttf"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/text_pading"
+            android:text="Mighty Setup"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/arrow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@+id/text_log_out"
+            android:textSize="@dimen/_25sdp"
+            android:text=">"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_bg_spotify">
+
+            <TextView
+                android:id="@+id/text_stay_fresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="serenity-light.ttf"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/text_pading"
+                android:text="Stay Fresh Settings"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/arrow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:padding="13dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignRight="@+id/text_log_out"
+                android:textSize="@dimen/_25sdp"
+                android:text=">"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_software_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/list_item_bg_spotify"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_software_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="serenity-light.ttf"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/text_pading"
+                    android:text="Software Update"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/arrow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:padding="13dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignRight="@+id/text_log_out"
+                android:textSize="@dimen/_25sdp"
+                android:text=">"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_bg_spotify">
+
+            <TextView
+                android:id="@+id/text_mighty_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="serenity-light.ttf"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/text_pading"
+                android:text="@string/mighty_about"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/arrow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:padding="13dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignRight="@+id/text_log_out"
+                android:textSize="@dimen/_25sdp"
+                android:text=">"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center_vertical"
+        android:background="@drawable/list_item_bg_spotify">
+
+        <TextView
+            android:id="@+id/text_privacy_term"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/text_pading"
+            android:gravity="left|center_vertical"
+            android:text="@string/privacy_terms"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:fontFamily="serenity-light.ttf"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/arrow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@+id/text_log_out"
+            android:textSize="@dimen/_25sdp"
+            android:text=">"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_bg_spotify">
+
+            <TextView
+                android:id="@+id/text_issue_report"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/text_pading"
+                android:gravity="left|center_vertical"
+                android:text="@string/issue_report"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:fontFamily="serenity-light.ttf"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/arrow12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:padding="13dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignRight="@+id/text_log_out"
+                android:textSize="@dimen/_25sdp"
+                android:text=">"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

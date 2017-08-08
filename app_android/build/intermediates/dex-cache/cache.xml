@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\678fa68bae490950381ba56f4a253be44047af44\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="785444f1c6a6b880b9aa0efb9a2464cb6c51f8dc">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_1d3149caacec06ae4d17191d02ca5f06681c5628.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\50a3d0719252897529d37b6e2d8c653bc6433263\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_088c81eb6e9c710940e9d6a4546f05692cae5175.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\guava\guava\18.0\guava-18.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\guava-18.0_23ae9d619c9ad952ac11ce7bff78df802e3e98c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\700a67f56d3b75ce5f01a1d4691022344fca5d2a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6e57fe155cea810fb2ba5fe9ffabcb197ecf81d1">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_16b3c526f251dcf1fca20847fe75de7da336873a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\270204759e48ad74ab8e83f2156893ce04618423\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_764c1058ec49f349e9ba54a25ee5ed12ac8da964.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\270204759e48ad74ab8e83f2156893ce04618423\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_27d25ba62478ddc1a472357268e1df6aaa80510a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\353e9d15abf082f5862116ef5123a106a8105522\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_ba92dc58bd64796378dcaae6c235b72b2e3db842.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\72287ec2fdbb42b251a124eb10a08249f01ddf28\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_92ef1c94204ae2115a0b6e3a0594fee98abcb4e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\5c95b896129360b13a8fd4d3db402ae2af4922fb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_a53a260ced6eed1e19986f2da5e7ea2ba79e3e67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_9271b65524836d81588e5e03e18cbebe4ce4e0a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\c4165f8716fa25b15244fc48201e5f16208b02ef\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b63d873d0f3394ace8b6a7d9aa194816c6253b4">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_1066c35b3d5b4e05d79b1460bcaff42d4817e3aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\dfc650471f6d29a5d022f44531f18e3e2a080619\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_8cc990b8d88823e84e5ae91a6d5aa0e289c7ade5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_df2dd7b8abfc400a0486e3648991cb214a8540ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\e895ab06b083cdcf8190f77c020b3e315c69639d\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_b04812f24af260e7a502caec7f4aa99aca916bf1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\app_android\library-circular\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a5a23f482cf016cb53fd56f52c244a3ac6aa8eb2">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_02848b93777ed054d7d7cbd6afd54088d0c8a24f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\a9b8beff635fd8eb4ca5515f22e29ab61d36e420\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_240a10c1d1bdcff6def4977b6cd8faf586e5865b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\146fa131be273fc3a7a4ea1be5d5cab49f99fd00\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_24fc3d674cad9a00882fce5db2712bd306a43ee4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\ec98105900eb9ca770632476712482f7d3d32a16\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7188fc9a524a8f965b5aeab74879036f0431080">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_fd64a8b0f599cdabb5045d4c8b85d620b62df2d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\org.msgpack\msgpack-core\0.8.7\d4c9f438ca4afd3111f57d54dbcb85a7ee9ae5cc\msgpack-core-0.8.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4c9f438ca4afd3111f57d54dbcb85a7ee9ae5cc">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\msgpack-core-0.8.7_7bca331069654482415352e588a0108751ccaef8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0_2795fd8e96dec181992384e31c7a85dcdfa18a5a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\gson-2.3.1_4d0f4d14671c3b62c713b87b46693366321ccec4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4_38c06e11013c0b04f8bcbe796002ae706825f7ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\93b7adbcd2adeb9ad08289a150967881af3d1553\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_f46b5c572825ded1e5dbd36592af6fe82b67ecca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\50a3d0719252897529d37b6e2d8c653bc6433263\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_78ffe0ddd97079a11b179f5ec90413b8f36f598e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\dfc650471f6d29a5d022f44531f18e3e2a080619\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_42a9a5ed23da967383dabaf709efa6442020eebb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\40b8c7035eb95eaf5957e89fcd23d751eae2e103\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c794cd6f001ebf421b766f23f7091ca686dbeed8">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_c77445615e945d4094ec3785d3d191901d5eea3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\1c336b264bbf6bdd74d33bf5bd09988b5c1e469b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_05e08fc54e3aa4f27f09bdc29980ec44fd11cff1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\419fdbfe75de4a7391f73b13361fd848ce3136c4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e84b30031d4bab89a2b5c45af4eb9213828524dd">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_c6bb7bbee662528cf48097f48a144d0c7c9604e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\e019cc4eec9ec7b28eb6af3583ffa2d5ad0757ca\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_2aaac4426b17412cad683560d5c2ad63f0d4982a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta4\constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-beta4_815f0eabdf20b7ba69ddead3a37d93f876a87b5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\1c336b264bbf6bdd74d33bf5bd09988b5c1e469b\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_a42cf813f4e60a01755f1b0c3590313373f7fad7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\2650feeb897ac105149381a11dee9cb92c849226\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_e8c7b469a5cc001c015d83f55bc20a3383e19eb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\e895ab06b083cdcf8190f77c020b3e315c69639d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_d963f1a24fa6ea8d407641cece852dc9cbbe8237.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\b77efa9c473d1862b2f4cf5bb594e4f86b3015b5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="D:\app_android\app\build\intermediates\pre-dexed\debug\classes_d924ca4ad351b2be7e15b484f3c867950f07ed1f.jar" />
+    </item>
+
+</items>

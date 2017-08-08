@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mightyaudio.fragment.ConnSpotifyFragment">
+
+
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:id="@+id/login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/spotify_text" />
+
+                    <TextView
+                        android:id="@+id/txt_login_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="Connect Spotify \n to Mighty"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/txt_login_sub_header1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="It's easy to get Spotify \n playing on your Mighty."
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_login_sub_header2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="You need a"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_login_sub_header3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="Spotify Premium account"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/spotify_green_color" />
+
+                    <TextView
+                        android:id="@+id/txt_login_sub_header4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="to take your playlists offline."
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/button_login"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/spotify_btn_selector"
+                        android:text="CONNECT"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_learn_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="SIGN UP FOR SPOTIFY "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/logout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_plane"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/spotify_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grey_header_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_head_spotify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spotify"
+                        android:textColor="#fff"
+                        android:gravity="center|center_horizontal"
+                        android:textAppearance="?android:textAppearanceLarge"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/list_item_bg_spotify"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_logged_at"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="left|center_vertical"
+                                android:paddingBottom="13dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="13dp"
+                                android:text="Logged in as : "
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <TextView
+                                android:id="@+id/text_username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/text_logged_at"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="Username"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/list_item_bg_spotify"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_log_out"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:gravity="left|center_vertical"
+                                android:padding="13dp"
+                                android:text="Logout"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <TextView
+                                android:id="@+id/arrow1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/text_log_out"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical"
+                                android:padding="13dp"
+                                android:text=">"
+                                android:textSize="@dimen/_25sdp" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/list_item_bg_spotify"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/txt_switchuser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:gravity="left|center_vertical"
+                                android:padding="13dp"
+                                android:text="Switch User"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <TextView
+                                android:id="@+id/arrow2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/txt_switchuser"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical"
+                                android:padding="13dp"
+                                android:text=">"
+                                android:textSize="@dimen/_25sdp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/list_item_bg_spotify"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_download_qulity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:gravity="left|center_vertical"
+                                android:padding="13dp"
+                                android:text="Download Quality"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <TextView
+                                android:id="@+id/arrow3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/text_download_qulity"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical"
+                                android:padding="13dp"
+                                android:text=">"
+                                android:textSize="@dimen/_25sdp" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/list_item_bg_spotify"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_spotify_help"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:fontFamily="serenity-light.ttf"
+                                android:gravity="left|center_vertical"
+                                android:padding="13dp"
+                                android:text="Spotify Help"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <TextView
+                                android:id="@+id/arrow4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/text_spotify_help"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center_vertical"
+                                android:padding="13dp"
+                                android:text=">"
+                                android:textSize="@dimen/_25sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    <!--</ScrollView>-->
+
+</FrameLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_plane"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_header"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ble_not_enabled"
+        android:visibility="gone"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/ble_icon"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ble_icon"/>
+
+            <TextView
+                android:id="@+id/text_ble_not_enable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Bluetooth is \nnot enabled "
+                android:textSize="@dimen/_27sdp"/>
+
+            <TextView
+                android:id="@+id/text_enable_subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Go to your phone’s settings and turn on Bluetooth so you can control your Mighty with this app."
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ble_discoverable_frame"
+        android:visibility="gone"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:id="@+id/ble_discoverable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <ProgressBar
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/progressBar_footer"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminateDrawable="@drawable/custom_progressbar"/>
+
+        <ImageView
+            android:id="@+id/ble_icon_discoverable"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ble_icon"/>
+
+        <TextView
+            android:id="@+id/ble_discover_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="There are no \n discoverable Mightys"
+            android:textSize="@dimen/_27sdp"/>
+
+        <TextView
+            android:id="@+id/ble_discover_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Make sure your Mighty \n is charged up and powered on."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/need_mighty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="Connect"
+                android:textSize="@dimen/_27sdp" />
+            <TextView
+                android:id="@+id/connect_mighty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_gravity="center|center_horizontal"
+                android:text="Click on the '+' next to the Mighty listed above to connect to it."
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linear2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/wait_led"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="If the LED blinks blue, press the play/pause button on your Mighty"
+                        android:textSize="@dimen/_27sdp" />
+
+                    <TextView
+                        android:id="@+id/established_connection_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="This may be required at times to establish a connection"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <ImageView
+                            android:id="@+id/mighty_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_50sdp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/mighty_image_blue_blink"/>
+
+                        <ImageView
+                            android:id="@+id/success"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_90sdp"
+                            android:src="@drawable/success" />
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn_continue"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_65sdp"
+                        android:layout_marginRight="@dimen/_65sdp"
+                        android:background="@drawable/btn_selector"
+                        android:gravity="center_vertical|center|center_horizontal"
+                        android:text="Continue"
+                        android:textSize="@dimen/_18sdp"
+                        android:textColor="@color/setup_btn_color"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:smoothScrollbar="true" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+

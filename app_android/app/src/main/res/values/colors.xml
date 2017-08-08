@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryCustomeDark">#000000</color>
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+
+    <color name="colorAccent">#00C2F3 </color>  <!-- -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="btn_color">#00C2F3</color>
+    <color name="btn_click">#003d4d</color>
+
+    <color name="bettary_charg">#7ED321</color>
+    <color name="mighty_storage">#00C2F3</color>
+    <color name="auto_fill">#FF8E88</color>
+    <color name="gray_colo">#FF4081</color>
+    <color name="action_selected_tittle_color">#9900c2f3</color>
+    <color name="btn_disable_color">#b3b3b3</color>
+    <color name="spotify_green_color">#1DB954</color>
+    <color name="spotify_btn_selector">#359758</color>
+    <color name="text_gray_color">#999999</color>
+    <color name="tab_gray_color">#cccccc</color>
+    <color name="setup_btn_color">#595959</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+</resources>

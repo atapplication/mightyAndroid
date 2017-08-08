@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_plane"
+    android:orientation="vertical"
+    tools:context="mightyaudio.activity.MightyGuide1">
+    <include layout="@layout/actionbar_header"/>
+
+    <LinearLayout
+        android:id="@+id/need_mighty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:text="Plug your Mighty\ninto a charger"
+            android:textSize="@dimen/_27sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center|center_horizontal">
+
+            <TextView
+                android:id="@+id/text_sub_head1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1. If the LED doesn't light up, hold the play/\npause button on your Mighty for 4 seconds"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/text_sub_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="2. Wait for LED to go from green to pink     \n(takes 30 seconds)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/mighty_img" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/oval_green"
+                android:layout_marginLeft="@dimen/_29sdp"
+                android:layout_marginTop="@dimen/_3sdp"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_65sdp"
+                android:layout_marginRight="@dimen/_65sdp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center_vertical|center|center_horizontal"
+                android:text="Continue"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/setup_btn_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
